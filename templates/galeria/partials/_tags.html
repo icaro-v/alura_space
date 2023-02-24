@@ -1,2 +1,11 @@
-{% extends 'galeria/index.html' %}
-                
+<section class="tags">
+    <p class="tags__titulo">Busque por tags:</p>
+    <form action="{% url 'buscar' %}">
+        <ul class="tags__lista">
+            <li class="tags__tag"><button type="submit" value="Nebulosa" name="buscar">Nebulosa</button></li>
+            <li class="tags__tag"><button type="submit" value="Estrela" name="buscar">Estrela</button></li>
+            <li class="tags__tag"><button type="submit" value="Galáxia" name="buscar">Galáxia</button></li>
+            <li class="tags__tag"><button type="submit" value="Planeta" name="buscar">Planeta</button></li>
+        </ul>
+    </form>                    
+</section>
